@@ -1,0 +1,56 @@
+.btn {
+  --btn-bg-color: var(--text-color-primary);
+  --btn-color: var(--bg-color);
+
+  background: var(--btn-bg-color);
+  border: 0;
+  border-radius: 0.8rem;
+  color: var(--bg-color);
+  cursor: pointer;
+  font: var(--fw-md) var(--fs-base) / 2.4rem var(--ff-inter);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+
+  &[aria-label] {
+    position: relative;
+
+    &::before {
+      content: "";
+      background: var(--bg-color);
+      border-radius: inherit;
+      inset: 1.5px;
+      position: absolute;
+    }
+
+    &::after {
+      content: attr(aria-label);
+      background: var(--btn-bg-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &:hover {
+    --btn-bg-color: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+    --btn-color: var(--surface-color);
+  }
+}
+
+.btn-sm {
+  font-size: var(--fs-sm);
+  padding: 0.8rem 1.6rem;
+}
+.btn-md {
+  font-size: var(--fs-base);
+  padding: 1.2rem 2.4rem;
+}
+.btn-lg {
+  font-size: 1.8rem;
+  padding: 1.6rem 3.2rem;
+}

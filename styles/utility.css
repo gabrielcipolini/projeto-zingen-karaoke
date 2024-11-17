@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.gap-16 {
+  gap: 1.6rem;
+}
+
 .py-base {
   padding-block: var(--py-base);
 }
