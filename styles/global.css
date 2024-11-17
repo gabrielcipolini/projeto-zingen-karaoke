@@ -29,7 +29,9 @@
   /* typography
   ff: font-family 
   fw: font-weight
-  fs: font-size */
+  fs: font-size 
+  px: padding no eixo x (horizontal) 
+  py: padding no eixo y (vertical) */
 
   --ff-inter: "Inter", system-ui, sans-serif;
   --fw-base: 400;
@@ -41,14 +43,11 @@
   --fs-lg: 2rem;
   --fs-base: 1.6rem;
   --fs-sm: 1.4rem;
-}
 
-@media (width >= 128rem) {
-  :root {
-    --fs-2xl: 6.4rem;
-    --fs-xl: 4.8rem;
-    --fs-lg: 3.2rem;
-  }
+  --px-lg: 2.4rem;
+  --py-base: 1.6rem;
+  --py-lg: 2.4rem;
+  --py-xl: 4.8rem;
 }
 
 html {
@@ -90,4 +89,17 @@ a {
 
 ul[role="list"] {
   list-style: none;
+}
+
+@media (width >= 1280px) {
+  :root {
+    --fs-2xl: 6.4rem;
+    --fs-xl: 4.8rem;
+    --fs-lg: 3.2rem;
+
+    --px-lg: 3.2rem;
+    --py-base: 2.4rem;
+    --py-lg: 4rem;
+    --py-xl: 8rem;
+  }
 }
