@@ -37,7 +37,7 @@
   }
 
   &:hover {
-    --btn-bg-color: linear-gradient(90deg, #fc4a1a 0%, #f7b733 100%);
+    --btn-bg-color: var(--brand-gradient);
     --btn-color: var(--surface-color);
   }
 }
