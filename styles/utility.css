@@ -9,6 +9,10 @@
   gap: 1.6rem;
 }
 
+.desktop-only {
+  display: none;
+}
+
 .grid {
   display: grid;
 }
@@ -17,8 +21,16 @@
   display: flex;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .gap-16 {
   gap: 1.6rem;
+}
+
+.gap-24 {
+  gap: 2.4rem;
 }
 
 .py-base {
@@ -41,5 +53,9 @@
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+
+  .desktop-only {
+    display: initial;
   }
 }

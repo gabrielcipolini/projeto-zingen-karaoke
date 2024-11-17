@@ -37,8 +37,8 @@
   }
 
   &:hover {
-    --btn-bg-color: var(--brand-gradient);
-    --btn-color: var(--surface-color);
+    background: var(--brand-gradient);
+    color: var(--surface-color);
   }
 }
 
@@ -53,4 +53,15 @@
 .btn-lg {
   font-size: 1.8rem;
   padding: 1.6rem 3.2rem;
+}
+
+@media (width >= 1280px) {
+  .btn-sm {
+    font-size: var(--fs-base);
+    padding: 1.2rem 2.4rem;
+  }
+  .btn-md {
+    font-size: 1.8rem;
+    padding: 1.6rem 3.2rem;
+  }
 }

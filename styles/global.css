@@ -54,6 +54,7 @@
 html {
   color: var(--text-color-primary);
   font-family: var(--ff-inter);
+  font-size: var(--fs-base);
   font-weight: var(--fw-base);
   line-height: 160%;
 }
@@ -85,6 +86,7 @@ h3 {
 
 a {
   color: inherit;
+  font-size: var(--fs-base);
   text-decoration: none;
 
   &:hover {
