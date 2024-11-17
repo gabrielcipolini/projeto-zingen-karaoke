@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  font: inherit;
+  padding: 0;
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --brand-gradient: linear-gradient(#fc4a1a, #f7b733);
+  --brand-primary: #f7b733;
+
+  --bg-color: #09090b;
+  --surface-color: #18181b;
+  --stroke-color: #27272a;
+
+  --text-color-primary: #f4f4f5;
+  --text-color-secondary: #a1a1aa;
+
+  /* typography
+  ff: font-family 
+  fw: font-weight
+  fs: font-size */
+
+  --ff-inter: "Inter", system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+
+  --fs-2xl: 4rem;
+  --fs-xl: 2.4rem;
+  --fs-lg: 2rem;
+  --fs-base: 1.6rem;
+  --fs-sm: 1.4rem;
+}
+
+@media (width >= 128rem) {
+  :root {
+    --fs-2xl: 6.4rem;
+    --fs-xl: 4.8rem;
+    --fs-lg: 3.2rem;
+  }
+}
+
+html {
+  color: var(--text-color-primary);
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-base);
+  line-height: 160%;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-color-primary);
+  font-weight: var(--fw-bold);
+  letter-spacing: -0.04em;
+  line-height: 120%;
+}
+
+h1 {
+  font-size: var(--fs-2xl);
+}
+
+h2 {
+  font-size: var(--fs-xl);
+}
+
+h3 {
+  font-size: var(--fs-lg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
