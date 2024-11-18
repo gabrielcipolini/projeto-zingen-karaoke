@@ -29,6 +29,10 @@
   justify-content: center;
 }
 
+.gap-8 {
+  gap: .8rem;
+}
+
 .gap-16 {
   gap: 1.6rem;
 }

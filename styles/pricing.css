@@ -1,0 +1,117 @@
+#pricing {
+  --fs-price: 3.2rem;
+
+  & header {
+    text-align: center;
+  }
+
+  & .cards {
+    margin-top: 3.2rem;
+
+    & h3 {
+      font-size: 2rem;
+    }
+
+    & p {
+      margin-top: 0.4rem;
+    }
+  }
+
+  & zin-pricing {
+    display: block;
+    font: var(--fw-bold) var(--fs-price) / 120% var(--ff-inter);
+    letter-spacing: -0.04em;
+    padding-block: 2.4rem;
+  }
+
+  & small {
+    color: var(--text-color-secondary);
+    font: var(--fw-base) var(--fs-base) / 125% var(--ff-inter);
+  }
+
+  & .btn {
+    width: 100%;
+  }
+
+  & .separator {
+    height: 1px;
+    margin-block: 3.2rem;
+    background: radial-gradient(
+      var(--text-color-secondary),
+      var(--surface-color) 70%
+    );
+  }
+
+  & ul {
+    & li {
+      background: url(../assets/icons/check.svg) no-repeat;
+      color: var(--text-color-secondary);
+      padding-left: 3.2rem;
+    }
+
+    & + small {
+      display: block;
+      margin-top: 2.4rem;
+      font-size: var(--fs-sm);
+    }
+  }
+
+  & .premium {
+    position: relative;
+    padding: 0.2rem;
+
+    &::before {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        var(--brand-secondary) 0%,
+        var(--brand-primary) 100%
+      );
+      border-radius: 2.4rem;
+      inset: 0;
+      position: absolute;
+      z-index: -1;
+    }
+
+    & .card {
+      padding-top: 7.2rem;
+
+      & > span {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background: linear-gradient(
+          90deg,
+          var(--brand-secondary) 0%,
+          var(--brand-primary) 100%
+        );
+        border-radius: 2.4rem 0 2.4rem 0;
+        color: var(--bg-color);
+        font: 600 1.2rem/1.6 var(--ff-inter);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 1.2rem 3.2rem;
+      }
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  #pricing {
+    --fs-price: 4rem;
+
+    & header {
+      max-width: 80rem;
+      margin-inline: auto;
+    }
+
+    & .premium .card {
+      padding-bottom: 9.6rem;
+    }
+
+    & .card:nth-child(3) .separator {
+      margin-block: 2.4rem;
+    }
+  }
+}

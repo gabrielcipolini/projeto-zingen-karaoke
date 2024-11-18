@@ -55,10 +55,12 @@
 html,
 body {
   color: var(--text-color-primary);
-  font-family: var(--ff-inter);
+  font: var(--fw-base) var(--fs-base) / 160% var(--ff-inter);
+
+  /* font-family: var(--ff-inter);
   font-size: var(--fs-base);
   font-weight: var(--fw-base);
-  line-height: 160%;
+  line-height: 160%; */
 }
 
 body {
@@ -100,6 +102,10 @@ a {
     background-clip: text;
     color: transparent;
   }
+}
+
+ul[role="list"] {
+  list-style-type: none;
 }
 
 img {
