@@ -58,6 +58,7 @@ body {
   font: var(--fw-base) var(--fs-base) / 160% var(--ff-inter);
 
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
