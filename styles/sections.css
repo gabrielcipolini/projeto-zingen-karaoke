@@ -18,7 +18,10 @@ section {
 }
 
 #smartphones_img {
-  background: url(../assets/images/bg-hero-mobile.svg) no-repeat center;
+  background: url(../assets/images/bg-hero-mobile.svg) no-repeat;
+
+  margin-inline: auto;
+  max-width: 375px;
 }
 
 @media (width >= 1280px) {
