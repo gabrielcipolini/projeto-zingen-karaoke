@@ -1,0 +1,9 @@
+#smartphones_img {
+  background: url(../assets/images/bg-hero-mobile.svg)  no-repeat;
+}
+
+@media (width >= 1280px) {
+  #smartphones_img {
+    display: none;
+  }
+}

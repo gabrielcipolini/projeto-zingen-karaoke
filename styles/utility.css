@@ -25,12 +25,20 @@
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .gap-16 {
   gap: 1.6rem;
 }
 
 .gap-24 {
   gap: 2.4rem;
+}
+
+.gap-48 {
+  gap: 4.8rem;
 }
 
 .py-base {
