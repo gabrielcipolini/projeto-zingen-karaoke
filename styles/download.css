@@ -1,0 +1,40 @@
+#download {
+  & .card {
+    /* background-color: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 2.4rem; */
+    padding: 4.8rem 2.4rem 24rem;
+    position: relative;
+
+    & .download-app-buttons {
+      flex-wrap: wrap;
+      margin-top: 4rem;
+    }
+
+    & img[src*="person-listening"] {
+      position: absolute;
+      right: -4.8rem;
+      bottom: 0;
+      max-width: 24rem;
+    }
+  }
+}
+
+@media (width >= 1280px) {
+  #download {
+    & .card {
+      padding: 14rem 8rem;
+
+      & > div {
+        max-width: 64rem;
+      }
+
+      & img[src*="person-listening"] {
+        position: absolute;
+        right: -4.8rem;
+        bottom: 0;
+        max-width: 46.6rem;
+      }
+    }
+  }
+}
