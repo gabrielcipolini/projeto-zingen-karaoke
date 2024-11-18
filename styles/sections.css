@@ -1,5 +1,24 @@
+section {
+  & header {
+    & strong {
+      color: var(--brand-primary);
+      font: var(--fw-md) var(--fs-sm) / 100% var(--ff-inter);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    & h2 {
+      margin-block: .8rem;
+    }
+  }
+
+  & p {
+    color: var(--text-color-secondary);
+  }
+}
+
 #smartphones_img {
-  background: url(../assets/images/bg-hero-mobile.svg)  no-repeat;
+  background: url(../assets/images/bg-hero-mobile.svg) no-repeat center;
 }
 
 @media (width >= 1280px) {
